@@ -16,7 +16,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2:"b"}
 const obj2 = {3:"a",4: "b"}
@@ -40,10 +40,40 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //output is generated in form of array
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser)); //output is generated in form of array
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+//object destructuring
+
+const course ={ 
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+
+//ourse.courseInstructor
+
+const {courseInstructor: instructor} = course //object destructored into instructor
+console.log(instructor);
+
+//apis concept:-
+
+// 1. apis in form of json file:
+// {
+//     "name":"aryan",
+//     "coursename":"js in hindi",
+//     "price": "free"
+// }
+
+// 2. apis in form of array:
+// [
+//     {},
+//     {},
+//     {}
+// ]
